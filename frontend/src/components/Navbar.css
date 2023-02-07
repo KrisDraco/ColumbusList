@@ -1,0 +1,97 @@
+
+.navbar{
+    height: 90px;
+    width: 100%;
+    background-color: #557A95;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    z-index: 50;
+}
+
+.navbar_logo h2{
+    color: whitesmoke;
+    font-size: 2rem;
+    cursor: pointer;
+    padding-left: 850px;
+}
+
+.navbar_links{
+    display:flex;
+    align-items:center;
+    list-style: none;
+}
+
+.navbar_links > li{
+    padding-left: 1.5rem;
+}
+
+.navbar_links > li > a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_links > li > a > span {
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+}
+
+.cart_link{
+    background-color: 	rgb(128,128,128);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cart_link:hover {
+    background: gold;
+    color: whitesmoke; 
+}
+
+.cartlogo_badge{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;;
+    font-size:1rem;
+    background-color: whitesmoke;
+    color:rgb(53, 57, 53);
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.hamburger_menu{
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+.hamburger_menu > div {
+    width: 100%;
+    height: 3px;
+    background-color: whitesmoke;
+}
+
+.hamburger_menu:hover > div {
+    background-color: gold;
+}
+
+@media(max-width: 990px){
+    .navbar_links{
+        display:none;
+    }
+
+    .hamburger_menu{
+        display:flex;
+    }
+}
